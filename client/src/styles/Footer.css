@@ -1,16 +1,17 @@
 .Footer {
   /* border: 2px red solid; */
-  position: fixed;
+  position: absolute;
   display: table;
   width: 100vw;
-  height:75px;
+  height:100px;
   padding-left: 0px;
   padding-bottom: 10px;
   padding-top: 10px;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   table-layout: fixed; /* For cells of equal size */
   background-color: White;
-  bottom: 0;
+  bottom: 0px;
 }
 .Footer li {
   display: table-cell;

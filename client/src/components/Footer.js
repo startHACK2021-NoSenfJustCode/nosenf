@@ -19,8 +19,9 @@ class Footer extends React.Component {
 
   render() {
     return (
+      
       <div>
-        <ul className="Footer" >
+        <ul className="Footer fixed-bottom" >
           <li onClick={this.handleNavClick.bind(this)}>
             <NavLink className='Link' activeClassName='active' exact to='/' >
               <img src={window.location.pathname === "/" ? WhiteHomeIcon : HomeIcon} alt="Home" />
