@@ -1,25 +1,93 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import { Route , Switch , Redirect, BrowserRouter , Link } from "react-router-dom"
+
+import Header from './Header.js'
+import Footer from './Footer.js'
+import Map from './components/Map.jsx'
+import Dashboard from './Dashboard.jsx'
+import Heart from './components/Heart.jsx'
+import Plus from './components/Plus.jsx'
+
+
+import Signup from './components/auth/Signup';
+import Navbar from './components/navbar/Navbar';
+import Login from './components/auth/Login';
+import Userprofile from './components/user/Userprofile';
+// import User from './User.jsx'
+
+// import { Router } from 'express';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+
+
+class App extends React.Component {
+
+  state = {
+    user: this.props.user
+  }
+
+  setUser = user => {
+    this.setState({
+      user: user
+    })
+  }
+
+  render() {
+    return (
+        // <div className="container"> 
+        <div>
+
+          <Header />
+            <figure class="fluidratio"></figure>
+            <Router>
+
+              <Switch>
+
+                <Route exact path="/">
+                  <Dashboard />
+                </Route>
+
+                <Route exact path="/map">
+                  <Map />
+                </Route>
+
+                <Route exact path="/heart">
+                  <Heart />
+                </Route>
+
+                <Route exact path="/plus">
+                  <Plus />
+                </Route>
+
+                <Route exact path="/user"
+                  component = { Userprofile }/>
+
+
+              </Switch>
+              
+              
+              <Route
+                exact
+                path='/signup'
+                render={props => <Signup setUser={this.setUser} {...props} />}
+              />
+
+              <Route exact path = "/login" 
+                render= { props => 
+                <Login setUser={this.setUser} {...props}/>}
+              />
+
+              <Footer />
+
+            </Router>
+
+        </div>        
+    );
+  }
 }
 
 export default App;
+
