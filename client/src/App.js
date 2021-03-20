@@ -1,8 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './Header.js'
+import Footer from './Footer.js'
 import './App.css';
-import Empty from './component.js'
-//Mikobranchi
+import logo from './logo.svg';
+
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Empty></Empty>
+        <Header></Header>
+        <Footer></Footer>
         <a
           className="App-link"
           href="https://reactjs.org"
