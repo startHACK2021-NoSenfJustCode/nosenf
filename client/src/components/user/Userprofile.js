@@ -9,7 +9,7 @@ export default class Userprofile extends Component {
                 {/* profile! */}
 
                 <div className="userAllContainer">
-                    
+
                     <div className="userDetailsContainer">
 
                         <div className="userBox Small">
