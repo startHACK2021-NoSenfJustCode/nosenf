@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import './App.scss';
 
 import React, { Component } from 'react'
@@ -16,6 +16,8 @@ import Signup from './components/auth/Signup';
 import Navbar from './components/navbar/Navbar';
 import Login from './components/auth/Login';
 import Userprofile from './components/user/Userprofile';
+// import { Router } from 'express';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 
