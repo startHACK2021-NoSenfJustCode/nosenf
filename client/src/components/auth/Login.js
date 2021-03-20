@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { login } from '../../services/auth';
-// import './auth.css';
+import './auth.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Form, Button, Alert, Container } from 'react-bootstrap';
 
@@ -54,21 +54,54 @@ export default class Login extends Component {
   render (){
     return (
       <div class="centerAuth">
+        <div className="loginLogo">
+          <img
+          src="../../Images/LightStGallenLogo.png"
+          alt="St Gallen Logo"
+          />
+
+          <h1>Get involed with your city</h1>
+        </div>
 
         <Container>
           <div class="boxOn">
             <div>
-              <h1>
-                Please log in
-              </h1>
-      
-          
               <p className="error">
                 {this.state.message}
               </p>
             </div>
-    
-            <Form onSubmit={this.handleSubmit}>
+
+          <div className='containerButtons'>
+  
+                  <div className="emailButton button">
+                    <img className = "iconImage"
+                      src='../../Images/emailIcon.png'
+                      alt= 'email icon'
+                    />
+                      <Link to = "/"> Continue with email </Link>
+                  </div>
+                  <hr></hr>
+                  <div className="appleButton button">
+                  <img className = "iconImage"
+                      src='../../Images/appleIcon.png'
+                      alt= 'email icon'
+                    />
+                    <Link to = "/"> Continue with Apple </Link>
+                  </div>
+
+                  <div className="facebookButton button">
+                  <img className = "iconImage"
+                      src='../../Images/fbIcon.png'
+                      alt= 'email icon'
+                    />
+                    <Link to = "/"> Continue with Facebook </Link>
+                  </div>
+  
+              
+          </div>
+
+           {/* Login mocked for PoC */}
+            {/* <Form onSubmit={this.handleSubmit}>
               <Form.Group>
                 <Form.Label htmlFor='username'>Username: </Form.Label>
                 <Form.Control 
@@ -95,12 +128,23 @@ export default class Login extends Component {
     
                 <Button variant="primary" type='submit'>Login</Button>
     
-            </Form>
+            </Form> */}
+            
+          </div>
+        </Container>
+
+        <div className="loginBottomImage">
+              <img
+                src='../../Images/CityOutline.png'
+                alt="Silhouette of a city skyline"
+              />
+            </div>
+
+
             <div className="signupLoginSwitch">
               Need to create an account?  <Link to = "/signup">Sign up</Link>
-            </div>
-            </div>
-        </Container>
+            </div>            
+        
     
       </div>
     )

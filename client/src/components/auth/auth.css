@@ -1,0 +1,108 @@
+.centerAuth {
+    width:100%;
+    min-height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100vw;
+    /* padding-top: 8vh; */
+    /* padding-bottom: 8vh; */
+}
+
+.loginLogo {
+    padding: 10px;
+}
+
+.loginLogo >img {
+    /* border: 2px black solid; */
+    /* position: absolute; */
+    width: 60%;
+    height: auto;
+    /* left: 60px;
+    top: 45px; */
+    /* padding: 10% 0%; */
+    margin: 15% 10%;
+}
+
+.loginLogo >h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.536364px;
+    color: #252529;
+}
+
+.containerButtons {
+    border: 2px green ;
+    margin-top:20%;
+}
+
+.button {
+    height: 10;
+    /* background-color: #5551FF; */
+    color: #FFFFFF;
+    border-radius: 23px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 5% 10%;
+    padding: 2% 0%;  
+}
+
+.button>a{
+    text-decoration: none!important;
+    color:inherit
+}
+.emailButton {
+    background-color: #5551FF;
+}
+
+.appleButton {
+    background-color: #252529;
+}
+
+.facebookButton{
+    background-color: #295396 ;
+    color: white;
+}
+
+
+.facebookButton>img{
+    width: 2em; 
+}
+
+.iconImage {
+    width: 25px;
+    margin: 0 20px;
+}
+
+
+
+.loginBottomImage{
+    margin: 10% 0% 0% 0%;
+}
+
+
+.signupLoginSwitch {
+    border: 2px black solid;
+    color:white ;
+    background-color: #070000 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:25vh;
+    width: 100vw;
+    /* padding-bottom: -10vh; */
+}
+

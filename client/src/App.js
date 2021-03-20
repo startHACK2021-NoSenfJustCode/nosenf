@@ -28,7 +28,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='App' >
-        <Navbar user={this.state.user} setUser={this.setUser} />
+        {/* <Navbar user={this.state.user} setUser={this.setUser} /> */}
 
         <Route
           exact
@@ -43,7 +43,7 @@ class App extends React.Component {
             // render={props => <Login setUser={this.setUser} {...props} />}
         />
         <div>
-          Text
+          
         </div>
         
       </div>
