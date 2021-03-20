@@ -9,7 +9,7 @@ import WhiteHomeIcon from './images/footer/WhiteHomeIcon.png';
 import WhiteMapIcon from './images/footer/WhiteMapIcon.png';
 import WhiteHeartIcon from './images/footer/WhiteHeartIcon.png';
 import PlusIcon from './images/footer/PlusIcon.png';
-import './Footer.css';
+import './styles/Footer.css';
 
 class Footer extends React.Component {
 

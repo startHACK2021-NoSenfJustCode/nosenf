@@ -1,5 +1,4 @@
-// import './App.css';
-import './App.scss';
+import './styles/App.scss';
 
 import React, { Component } from 'react'
 import { Route , Switch , Redirect, BrowserRouter , Link } from "react-router-dom"
@@ -41,7 +40,7 @@ class App extends React.Component {
         <div>
 
           <Header />
-            <figure class="fluidratio"></figure>
+            <figure className="fluidratio"></figure>
             <Router>
 
               <Switch>

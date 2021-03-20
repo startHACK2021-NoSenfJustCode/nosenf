@@ -54,7 +54,7 @@ export default class Login extends Component {
 
   render (){
     return (
-      <div class="centerAuth">
+      <div className="centerAuth">
         <div className="loginLogo">
           <img
           src="../../Images/LightStGallenLogo.png"
@@ -65,7 +65,7 @@ export default class Login extends Component {
         </div>
 
         <Container>
-          <div class="boxOn">
+          <div className="boxOn">
             <div>
               <p className="error">
                 {this.state.message}

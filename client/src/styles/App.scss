@@ -5,7 +5,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
-  background-image: url("./images/Gellen.jpg");
+  background-image: url("../images/Gellen.jpg");
 }
 
 .card {
@@ -29,9 +29,8 @@ body {
   padding: 2px 16px;
   text-align: center;
   align-items: center;
-.container {
+}
+  .container {
   padding: 0px;
-
   position: fixed;
-
 }
