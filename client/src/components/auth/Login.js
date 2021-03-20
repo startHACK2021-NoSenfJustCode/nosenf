@@ -4,7 +4,7 @@ import { login } from '../../services/auth';
 import './auth.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Form, Button, Alert, Container } from 'react-bootstrap';
-import '../../components/button.css';
+import '../../styles/button.css';
 
 
 export default class Login extends Component {
@@ -54,7 +54,7 @@ export default class Login extends Component {
 
   render (){
     return (
-      <div class="centerAuth">
+      <div className="centerAuth">
         <div className="loginLogo">
           <img
           src="../../Images/LightStGallenLogo.png"
@@ -65,7 +65,7 @@ export default class Login extends Component {
         </div>
 
         <Container>
-          <div class="boxOn">
+          <div className="boxOn">
             <div>
               <p className="error">
                 {this.state.message}
