@@ -46,7 +46,7 @@ class Footer extends React.Component {
             <img src={window.location.pathname === "/user" ? WhiteUserIcon : UserIcon} alt="User" />
             </NavLink>
           </li>
-        </ul >);
+        </ul >
       </div>
     )
   }

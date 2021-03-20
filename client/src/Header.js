@@ -1,5 +1,5 @@
 import React from 'react';
-import DarkLogo from './images/DarkStGallenLogo.png';
+import DarkLogo from './images/DarkStGallenLogoCrop.png';
 import './Header.css';
 
 

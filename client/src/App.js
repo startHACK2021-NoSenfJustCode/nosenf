@@ -7,35 +7,36 @@ import Dashboard from './Dashboard.jsx'
 import Heart from './Heart.jsx'
 import Plus from './Plus.jsx'
 import User from './User.jsx'
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div>
+    <div className="container"> {//style={{height: window.innerHeight}}>
+    }
+    <Header />
+      <figure class="fluidratio"></figure>
       <Router>
-        <div>
-          <Header />
-          <Switch>
-            <Route exact path="/">
-              <Dashboard />
-            </Route>
-            <Route exact path="/map">
-              <Map />
-            </Route>
-            <Route exact path="/heart">
-              <Heart />
-            </Route>
-            <Route exact path="/plus">
-              <Plus />
-            </Route>
-            <Route exact path="/user">
-              <User />
-            </Route>
-          </Switch>
-          <Footer />
-        </div>
+        <Switch>
+          <Route exact path="/">
+            <Dashboard />
+          </Route>
+          <Route exact path="/map">
+            <Map />
+          </Route>
+          <Route exact path="/heart">
+            <Heart />
+          </Route>
+          <Route exact path="/plus">
+            <Plus />
+          </Route>
+          <Route exact path="/user">
+            <User />
+          </Route>
+        </Switch>
+        <Footer />
       </Router>
-    </div>
+
+    </div >
   )
 }
 
