@@ -7,6 +7,7 @@ import { Route , Switch , Redirect, BrowserRouter , Link } from "react-router-do
 import Signup from './components/auth/Signup';
 import Navbar from './components/navbar/Navbar';
 import Login from './components/auth/Login';
+import Userprofile from './components/user/Userprofile';
 
 
 // We want to use a Signup component in the App.js - here we also add the user to the state
@@ -28,7 +29,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='App' >
-        {/* <Navbar user={this.state.user} setUser={this.setUser} /> */}
+        <Navbar user={this.state.user} setUser={this.setUser} />
 
         <Route
           exact
@@ -39,9 +40,24 @@ class App extends React.Component {
         <Route exact path = "/login" 
           render= { props => 
           <Login setUser={this.setUser} {...props}/>}
-            // component = { Login } /> //replaced by render
-            // render={props => <Login setUser={this.setUser} {...props} />}
         />
+
+        <Route exact path = "/profile" 
+          // render= { props => {
+          //     if (this.state.user) {
+          //       return <Userprofile 
+          //         user = {this.state.user}
+          //         {...props}
+          //       />
+          //     }
+          //     else {return <Redirect to= '/' /> }
+              component = { Userprofile } 
+          /> 
+
+        
+        
+
+
         <div>
           
         </div>

@@ -47,47 +47,12 @@
     margin-top:20%;
 }
 
-.button {
-    height: 10;
-    /* background-color: #5551FF; */
-    color: #FFFFFF;
-    border-radius: 23px;
-    font-family: Proxima Nova;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 22px;
-    margin: 5% 10%;
-    padding: 2% 0%;  
-}
 
-.button>a{
-    text-decoration: none!important;
-    color:inherit
-}
-.emailButton {
-    background-color: #5551FF;
-}
-
-.appleButton {
-    background-color: #252529;
-}
-
-.facebookButton{
-    background-color: #295396 ;
-    color: white;
-}
-
-
-.facebookButton>img{
-    width: 2em; 
-}
 
 .iconImage {
     width: 25px;
     margin: 0 20px;
 }
-
 
 
 .loginBottomImage{

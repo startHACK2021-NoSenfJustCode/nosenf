@@ -1,0 +1,53 @@
+.userButton {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;;
+    line-height: 12px;
+    width: 25vw;
+}
+
+.redGradientButton {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(228, 49, 23, 0.8) 87.07%);
+    border-radius: 16px;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* //Login Buttons */
+.button {
+    height: 10;
+    /* background-color: #5551FF; */
+    color: #FFFFFF;
+    border-radius: 23px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: bold;
+    /* font-size: 15px; */
+    line-height: 22px;
+    margin: 5% 10%;
+    padding: 2% 0%;  
+}
+
+.button>a{
+    text-decoration: none!important;
+    color:inherit
+}
+.emailButton {
+    background-color: #5551FF;
+}
+
+.appleButton {
+    background-color: #252529;
+}
+
+.facebookButton{
+    background-color: #295396 ;
+    color: white;
+}
+
+
+.facebookButton>img{
+    width: 2em; 
+}

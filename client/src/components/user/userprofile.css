@@ -1,0 +1,74 @@
+.userAllContainer {
+    /* border: 2px red solid; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.userDetailsContainer {
+    /* border: 2px blue solid; */
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.userBox {
+    width: 35%;
+    padding: 10px 45px;
+    margin: 2%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background: rgba(60, 68, 77, 0.8);
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    color:white;
+    
+}
+
+.userBox >img {
+    width:30px;
+    height: auto;
+    padding: 15% 0%;
+}
+.Small {
+    width: 40%;
+}
+
+.Wide {
+    width: 84%
+}
+
+.userBox >h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    /* width: 40vw; */
+    /* padding: 3%; */
+}
+
+.userBox.Small >h1 {
+    width: 40vw;
+}
+
+.userBox.Wide >h1 {
+    width:84vw;
+}
+
+.userBox >p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 24px; */
+    line-height: 28px;
+    width: 30vw;
+    padding: 5%;
+}

@@ -4,6 +4,7 @@ import { login } from '../../services/auth';
 import './auth.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Form, Button, Alert, Container } from 'react-bootstrap';
+import '../../components/button.css';
 
 
 export default class Login extends Component {
@@ -78,7 +79,7 @@ export default class Login extends Component {
                       src='../../Images/emailIcon.png'
                       alt= 'email icon'
                     />
-                      <Link to = "/"> Continue with email </Link>
+                      <Link to = "/profile"> Continue with email </Link>
                   </div>
                   <hr></hr>
                   <div className="appleButton button">
