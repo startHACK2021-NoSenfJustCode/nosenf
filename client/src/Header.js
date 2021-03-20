@@ -1,8 +1,13 @@
 import React from 'react';
+import './Header.css';
 
 class Header extends React.Component {
   render() {
-    return <h2>I'm empty</h2>;
+    return (
+      <div className="Header">
+        <img src={'./images/DarkStGallenLogo.png'} alt="Header"/>
+      </div>
+    );
   }
 }
 
