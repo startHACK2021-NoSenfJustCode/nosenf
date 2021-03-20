@@ -57,7 +57,7 @@ export default class Userprofile extends Component {
                     <div className="userBox Wide">
                         <h1>Citizen vs Projects</h1>
                         <img
-                            src=""
+                            src="../../Images/diagramm.png"
                             alt="medal icon"
                         />
                     </div>

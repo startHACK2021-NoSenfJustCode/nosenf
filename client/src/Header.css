@@ -1,0 +1,12 @@
+.Header {
+  box-sizing: border-box;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #000;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
