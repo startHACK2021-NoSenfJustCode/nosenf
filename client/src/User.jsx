@@ -1,9 +1,11 @@
-function User() {
-    return (
-        <div>
-            <h2>User</h2>
-        </div>
-    )
-}
+// function User() {
+//     return (
+//         <div>
+//             <h2>User</h2>
+//         </div>
+//     )
+// }
 
-export default User;
+// export default User;
+
+//moved to components/user/Userprofile.js

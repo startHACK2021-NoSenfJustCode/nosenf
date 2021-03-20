@@ -20,33 +20,38 @@ class Footer extends React.Component {
   render() {
     return (
       <div>
-        < ul className="Footer" >
+        <ul className="Footer" >
           <li onClick={this.handleNavClick.bind(this)}>
             <NavLink className='Link' activeClassName='active' exact to='/' >
               <img src={window.location.pathname === "/" ? WhiteHomeIcon : HomeIcon} alt="Home" />
             </NavLink>
           </li>
+
           <li onClick={this.handleNavClick.bind(this)} >
             <NavLink className='Link' activeClassName='active' exact to='/map'>
             <img src={window.location.pathname === "/map" ? WhiteMapIcon : MapIcon} alt="Map" />
             </NavLink>
           </li>
+
           <li onClick={this.handleNavClick.bind(this)} >
             <NavLink className='Link' activeClassName='active' exact to='/plus'>
             <img src={window.location.pathname === "/plus" ? PlusIcon : PlusIcon} alt="Plus" />
           </NavLink>
           </li>
+
           <li onClick={this.handleNavClick.bind(this)} >
             <NavLink className='Link' activeClassName='active' exact to='/heart'>
             <img src={window.location.pathname === "/heart" ? WhiteHeartIcon : HeartIcon} alt="Heart" />
             </NavLink>
           </li>
+
           <li onClick={this.handleNavClick.bind(this)} >
             <NavLink className='Link' activeClassName='active' exact to='/user'>
             <img src={window.location.pathname === "/user" ? WhiteUserIcon : UserIcon} alt="User" />
             </NavLink>
           </li>
-        </ul >
+        </ul>
+        
       </div>
     )
   }

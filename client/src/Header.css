@@ -1,12 +1,11 @@
 .Header {
   box-sizing: border-box;
-  width: auto;
+  width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   background-color: #000;
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 100px;
 }
 
