@@ -11,8 +11,7 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="container"> {//style={{height: window.innerHeight}}>
-    }
+    <div className="container">
     <Header />
       <figure class="fluidratio"></figure>
       <Router>
