@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './userprofile.css';
-import '../../components/button.css';
+import '../../styles/button.css';
 
 export default class Userprofile extends Component {
     render() {

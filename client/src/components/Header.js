@@ -1,6 +1,6 @@
 import React from 'react';
-import DarkLogo from './images/DarkStGallenLogoCrop.png';
-import './Header.css';
+import DarkLogo from '../images/DarkStGallenLogoCrop.png';
+import '../styles/Header.css';
 
 
 class Header extends React.Component {

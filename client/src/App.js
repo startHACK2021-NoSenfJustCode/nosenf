@@ -1,13 +1,12 @@
-// import './App.css';
-import './App.scss';
+import './styles/App.scss';
 
 import React, { Component } from 'react'
 import { Route , Switch , Redirect, BrowserRouter , Link } from "react-router-dom"
 
-import Header from './Header.js'
-import Footer from './Footer.js'
+import Header from './components/Header.js'
+import Footer from './components/Footer.js'
 import Map from './components/Map.jsx'
-import Dashboard from './Dashboard.jsx'
+import Dashboard from './components/Dashboard.jsx'
 import Heart from './components/Heart.jsx'
 import Plus from './components/Plus.jsx'
 
@@ -90,4 +89,3 @@ class App extends React.Component {
 }
 
 export default App;
-

@@ -49,7 +49,7 @@ export default class Signup extends Component {
     console.log(this.props)
 
     return (
-      <div class="centerAuth">
+      <div className="centerAuth">
 
         <Container>
           <div className="boxOn">
@@ -92,14 +92,14 @@ export default class Signup extends Component {
                 <div className="profileImageUpload">
                   <Form.Label  htmlFor="profileImage">Uplodad a Profile Picture? </Form.Label>
               
-                      <div class="profileImageUploadContainer">
+                      <div className="profileImageUploadContainer">
                         <Form.Control 
                             type = "file"
                             name = "profileImage"
                             id = "profileImage"
                             value = {this.state.profileImage}
                             onChange={this.handleFileUpload}
-                            // class="profileImageUpload"
+                            // className="profileImageUpload"
                         />  
                 </div>
             </div>
