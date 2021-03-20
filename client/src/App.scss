@@ -16,13 +16,17 @@ body {
   margin-left: auto;
   offset: 0px, 30px;
   background-color: rgba(60, 68, 77, 0.8);
-  color:white ;
+  height: 500px;
+  color: white;
+  border-radius: 6px;
 }
 
 .card:hover {
-  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.555);
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.685);
 }
 
-.container {
+.card .container {
   padding: 2px 16px;
+  text-align: center;
+  align-items: center;
 }

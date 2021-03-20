@@ -3,8 +3,8 @@ function Dashboard() {
         <div>
             <div className="card">
                 <div class="container">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h2><b>Expenses of city 2022</b></h2>
+                    <div className="button">Button</div>
                 </div>
             </div>
         </div>
