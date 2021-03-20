@@ -53,6 +53,7 @@ export default class Login extends Component {
 
 
   render (){
+
     return (
       <div className="centerAuth">
         <div className="loginLogo">
@@ -79,7 +80,7 @@ export default class Login extends Component {
                       src='../../Images/emailIcon.png'
                       alt= 'email icon'
                     />
-                      <Link to = "/profile"> Continue with email </Link>
+                      <Link to = "/user"> Continue with email </Link>
                   </div>
                   <hr></hr>
                   <div className="appleButton button">

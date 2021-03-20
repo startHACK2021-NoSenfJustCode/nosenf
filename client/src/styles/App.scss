@@ -26,8 +26,13 @@ body {
 }
 
 .Hbutton {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(228, 49, 23, 0.8) 87.07%);
+  // background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(228, 49, 23, 0.8) 87.07%);
   border-radius: 20px !important;
   font-size: 10px !important;
   color: white !important;
+
+  background: linear-gradient(3600deg, rgba(0, 0, 0, 0.8) 0%, rgba(228, 49, 23, 0.8) 87.07%);
+  border-radius: 16px;
+  // font-size: 10px;
+  // line-height: 12px;
 }

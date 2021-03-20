@@ -12,7 +12,7 @@ import Plus from './components/Plus.jsx'
 
 
 import Signup from './components/auth/Signup';
-import Navbar from './components/navbar/Navbar';
+// import Navbar from './components/navbar/Navbar';
 import Login from './components/auth/Login';
 import Userprofile from './components/user/Userprofile';
 // import User from './User.jsx'
@@ -35,8 +35,9 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
-      <div className="container" style={{ "marginTop":"100px"}}>
+      <div className="container" style={{ "margin-top":"15%"}}>
         <Header/>
         <figure className="fluidratio"></figure>
         <Router>
@@ -84,7 +85,7 @@ class App extends React.Component {
           <Footer />
         </Router>
 
-      </div >
+      </div>
     );
   }
 }
