@@ -42,6 +42,10 @@ class App extends React.Component {
             // component = { Login } /> //replaced by render
             // render={props => <Login setUser={this.setUser} {...props} />}
         />
+        <div>
+          Text
+        </div>
+        
       </div>
     );
   }

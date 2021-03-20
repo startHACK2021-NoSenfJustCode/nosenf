@@ -3,34 +3,34 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
-import axios from 'axios';
+// import axios from 'axios';
 import { BrowserRouter as Router } from 'react-router-dom';
  
 
+//Debug why the api call isn't working 
+// axios.get('/api/auth/loggedin')
+//   .then(response => {
+//     const user = response.data;
 
-axios.get('/api/auth/loggedin')
-  .then(response => {
-    const user = response.data;
-
-    console.log(`index.js`, user)
+//     console.log(`index.js`, user)
     
-    ReactDOM.render(
-      <Router>
-        <App user = {user} />
-      </Router>,
-      document.getElementById('root')
-    );
-  });
+//     ReactDOM.render(
+//       <Router>
+//         <App user = {user} />
+//       </Router>,
+//       document.getElementById('root')
+//     );
+//   });
 
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <Router>
-//       <App />
-//     </Router>
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+ReactDOM.render(
+  <React.StrictMode>
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 
 // If you want to start measuring performance in your app, pass a function
