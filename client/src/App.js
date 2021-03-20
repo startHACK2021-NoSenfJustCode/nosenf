@@ -41,7 +41,7 @@ class App extends React.Component {
         <div>
 
           <Header />
-            <figure class="fluidratio"></figure>
+            <figure className="fluidratio"></figure>
             <Router>
 
               <Switch>
