@@ -8,7 +8,7 @@ body {
   background-image: url("../images/Gellen.jpg");
 }
 
-.card {
+.Hcard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 90%;
@@ -21,11 +21,11 @@ body {
   border-radius: 6px;
 }
 
-.card:hover {
+.Hcard:hover {
   box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.685);
 }
 
-.card .container {
+.Hcard .container {
   padding: 2px 16px;
   text-align: center;
   align-items: center;
