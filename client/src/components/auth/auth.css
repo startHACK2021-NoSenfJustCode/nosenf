@@ -31,6 +31,7 @@
 }
 
 .loginLogo >h1 {
+    margin: 10vw 0vh;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -101,7 +102,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:25vh;
+    height:20vh;
     width: 100vw;
     /* padding-bottom: -10vh; */
 }

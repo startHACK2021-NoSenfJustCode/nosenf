@@ -60,7 +60,7 @@ export default class Login extends Component {
           alt="St Gallen Logo"
           />
 
-          <h1>Get involed with your city</h1>
+          <h1 >Get involed with your city</h1>
         </div>
 
         <Container>
