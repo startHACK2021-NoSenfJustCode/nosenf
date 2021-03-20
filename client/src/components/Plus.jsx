@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import './user/userprofile.css'
 import { Form, Button, Alert, Container } from 'react-bootstrap';
-import axios from "axios";
+// import axios from "axios";
+import '../styles/Plus.css';
 
 export default class Plus extends Component {
 
     state = {
         title: '',
         description: '',
+        message:''
     }
     
       handleChange = (event) => {
@@ -51,76 +53,119 @@ export default class Plus extends Component {
       handleSubmit = (event) => {
         event.preventDefault ();
     
-        console.log("submit");
-          
-        const { title, description} = this.state;
-        
-        
-        axios.post("/api/proposals", {    
-          title:title,
-          description: description,
+        this.setState({
+          message:`Proposal submitted!`
         })
-          .then( (event) => {
-            console.log(event.data , "fetch event")
-            this.props.refreshData();
-            this.setState({
-              message:`Proposal submitted!`
-            })
-          }).catch( err => {
-            console.log(err);
-         })
+
+        // console.log(this.state.message)
+        
+        //Post to mongo mocked only
+        // const { title, description} = this.state;
+        
+        
+        // axios.post("/api/proposals", {    
+        //   title:title,
+        //   description: description,
+        // })
+          
+
+        //   .then( (event) => {
+        //     console.log('message:`Proposal submitted!`')
+        //     console.log(event.data , "fetch event")
+        //     this.props.refreshData();
+        //     this.setState({
+        //       message:`Proposal submitted!`
+        //     })
+        //   }).catch( err => {
+        //     console.log(err);
+        //  })
 
       }; //handleSubmit end
       
 
     render() {
-        return (
-            <div>
-                <div className="userAllContainer">
-                
-                    <div className="userBox Wide">
+      if (this.state.message.length <5) return (
+        <div>
+        <div className="userAllContainer">
+        
+            <div className="userBox Wide">
+                <p>
+                    {this.state.message}
+                </p>
 
-                        <p className="error">
-                            {this.state.message}
-                        </p>
+                <h1>Submit your project proposal!</h1>
 
-                        <h1>Add a new project proposal!</h1>
+                <div className="proposalText">
+                  You can find details on the entire process <a className="externalLink" href="https://daten.stadt.sg.ch/pages/home0/">here</a>
+                </div>    
 
-                        <p>You can find details on the entire process <a href="https://daten.stadt.sg.ch/pages/home0/">here</a></p>    
+                <Form onSubmit={this.handleSubmit}> 
+                    <Form.Group>
+                        <Form.Label htmlFor='username'>Project Name: </Form.Label>
+                        <Form.Control 
+                        size="lg"
+                        type = "text"
+                        name = "username"
+                        id = "username"
+                        value = {this.state.username}
+                        onChange = {this.handleChange}
+                        />
+                    </Form.Group>
+            
+                    <Form.Group>
+                        <Form.Label htmlFor="description">Description </Form.Label>
+                          <Form.Control as="textarea" rows={3}
+                              type="text"
+                              height="20px"
+                              name="description"
+                              id="description"
+                              value={this.state.description}
+                              onChange={this.handleChange}
+                            />
+                        </Form.Group>
 
-                        <Form onSubmit={this.handleSubmit}> 
-                            <Form.Group>
-                                <Form.Label htmlFor='username'>Project Name: </Form.Label>
-                                <Form.Control 
-                                size="lg"
-                                type = "text"
-                                name = "username"
-                                id = "username"
-                                value = {this.state.username}
-                                onChange = {this.handleChange}
-                                />
-                            </Form.Group>
-                    
-                            <Form.Group>
-                                <Form.Label htmlFor="password">Description </Form.Label>
-                                    <Form.Control 
-                                        size="lg"
-                                        type = "password"
-                                        name = "password"
-                                        id = "password"
-                                        value = {this.state.password}
-                                        onChange = {this.handleChange}
-                                    />  
-                                </Form.Group>
+                        <div className="formImage">
+                            <Form.Group >
+                                <Form.Label hmtlFor="image" >Upload an image
+                                  <img
+                                    src='../../Images/Cameracamera.png'
+                                    alt='camera icon'
+                                    classname="formImage"
+                                  />
+                                </Form.Label>
+                            </Form.Group> 
+                        </div>
 
-                                <Button type='submit'> 
-                                    Add your event! 
-                                </Button>
-                        </Form>
+                        <div className="offsetBottom">
+                          <Button type='submit' className="button redGradientButton Wide ">
+                              Add your event!
+                          </Button>
+                        </div>
+                </Form>
 
-                    </div>
-                </div>
-            </div>
-        )
+                  </div>
+              </div>
+          </div>
+)
+      else return (
+        <div className="userAllContainer">
+          <div className="userBox Wide LargeSquare">
+            <h1>
+              {this.state.message}
+            </h1>
+          </div>
+        </div>
+      )
+        
     }
 }
+
+
+//For image upload
+  //   <Form.Control 
+  //     type="file"
+  //     name="image"
+  //     id="image" */}
+  //     // onChange={this.handleFileUpload}
+  //     // class="profileImageUpload"
+  //   />

@@ -1,0 +1,28 @@
+.proposalText {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    width: 60vw;
+    margin: 30px ;
+}
+
+.externalLink {
+    text-decoration: none!important;
+    color: rgb(133, 194, 255);
+    /* color:inherit */
+}
+
+.externalLink:hover {
+   font-weight: 300; 
+   color: rgb(233, 255, 133);
+}
+
+.formImage {
+    margin: 5vh 0 2vh; 
+}
+
+.offsetBottom {
+    margin-bottom: 8vh;
+}

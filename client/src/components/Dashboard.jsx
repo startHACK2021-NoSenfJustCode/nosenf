@@ -1,17 +1,19 @@
+import React, { Component } from 'react'
 
-function Dashboard() {
-    return (
-        <div>
-            <div className="Hcard">
-                <div className="container">
-                    <h2><b>Expenses of city 2022</b></h2>
-                    <div className="button">Button</div>
+export default class Dashboard extends Component {
+    render() {
+        return (
+            <div>
+                <div className="Hcard">
+                    <div className="container">
+                        <h2><b>Expenses of city 2022</b></h2>
+                        <div className="button">Button</div>
+                    </div>
                 </div>
+
             </div>
-
-        </div>
-
-    )
+        )
+    }
 }
 
-export default Dashboard;
+

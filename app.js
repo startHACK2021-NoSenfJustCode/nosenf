@@ -73,6 +73,12 @@ app.use('/', index);
 const auth = require('./routes/auth');
 app.use('/api/auth', auth);
 
+const user = require('./routes/user');
+app.use('/api/user', user);
+
+const proposals = require('./routes/proposals');
+app.use('/api/proposals', proposals);
+
 
 
 module.exports = app;

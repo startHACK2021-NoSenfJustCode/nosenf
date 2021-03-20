@@ -57,8 +57,10 @@ class App extends React.Component {
                   <Heart />
                 </Route>
 
-                <Route exact path="/plus">
-                  <Plus />
+                <Route exact path="/plus"
+                  render={(props) => 
+                  <Plus setUser={this.setUser} {...props}/>}>
+                  {/* <Plus /> */}
                 </Route>
 
                 <Route exact path="/user"
