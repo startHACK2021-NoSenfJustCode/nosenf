@@ -1,43 +1,42 @@
 import React from 'react';
-import {BrowserRouter as Router,Switch,Route,} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import Header from './Header.js'
 import Footer from './Footer.js'
 import Map from './Map.jsx'
 import Dashboard from './Dashboard.jsx'
 import Heart from './Heart.jsx'
 import Plus from './Plus.jsx'
-import Settings from './Settings.jsx'
+import User from './User.jsx'
 import './App.css';
-
 
 function App() {
   return (
     <div>
       <Router>
         <div>
-          <Header/>
+          <Header />
           <Switch>
             <Route exact path="/">
               <Dashboard />
             </Route>
-            <Route path="/map">
+            <Route exact path="/map">
               <Map />
             </Route>
-            <Route path="/heart">
+            <Route exact path="/heart">
               <Heart />
             </Route>
-            <Route path="/plus">
+            <Route exact path="/plus">
               <Plus />
             </Route>
-            <Route path="/settings">
-              <Settings />
+            <Route exact path="/user">
+              <User />
             </Route>
           </Switch>
           <Footer />
         </div>
       </Router>
     </div>
-  );
+  )
 }
 
 /*    <div className="App">

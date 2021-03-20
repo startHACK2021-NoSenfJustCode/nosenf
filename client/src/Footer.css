@@ -5,9 +5,9 @@
   padding-left: 0px;
   padding-bottom: 10px;
   padding-top: 10px;
-  margin: 0 0 0 0 px;
+  margin: 0 0 0 0px;
   table-layout: fixed; /* For cells of equal size */
-  background-color: rgba(201, 193, 193, 0.719);
+  background-color: White;
   bottom: 0;
 }
 .Footer li {
@@ -19,7 +19,8 @@
 .Footer img {max-height: 20px;}
 
 .active img {
+  color: #fff!important;
   border-radius: 25px;
-  background: red;
+  background-image: linear-gradient(red, black);
   padding: 25px;
 }
