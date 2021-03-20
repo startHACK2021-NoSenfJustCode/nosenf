@@ -80,7 +80,7 @@ export default class Login extends Component {
                       src='../../Images/emailIcon.png'
                       alt= 'email icon'
                     />
-                      <Link to = "/user"> Continue with email </Link>
+                      <Link to = "/profile"> Continue with email </Link>
                   </div>
                   <hr></hr>
                   <div className="appleButton button">

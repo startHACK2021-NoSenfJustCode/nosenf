@@ -37,7 +37,7 @@ class App extends React.Component {
   render() {
 
     return (
-      <div className="container" style={{ "margin-top":"15%"}}>
+      <div className="container" style={{ "margin-top":"100px"}}>
         <Header/>
         <figure className="fluidratio"></figure>
         <Router>
