@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 
-
 router.post('/signup', (req, res) => {
-  const { username, password} = req.body;
+  const { username, password } = req.body;
 
   if (!password || password.length < 8) {
     return res
@@ -27,8 +27,8 @@ router.post('/signup', (req, res) => {
       const salt = bcrypt.genSaltSync();
       const hash = bcrypt.hashSync(password, salt);
 
-      return User.create({ username: username, password: hash  })
-      .then( dbUser => {
+      return User.create({ username: username, password: hash }).then(
+        dbUser => {
 
           req.login(dbUser, err => {
             if (err) {
@@ -48,12 +48,10 @@ router.post('/signup', (req, res) => {
 
 router.post('/login', (req, res) => {
   passport.authenticate('local', (err, user) => {
-    // console.log(`server auth.js`, user)
     if (err) {
       return res.status(500).json({ message: 'Error while authenticating' });
     }
     if (!user) {
-      // console.log(`server auth.js`, user)
       return res.status(400).json({ message: 'Wrong credentials' });
     }
     req.login(user, err => {
@@ -72,8 +70,9 @@ router.delete('/logout', (req, res) => {
   res.json({ message: 'Successful logout' });
 });
 
+// returns the logged in user
 router.get('/loggedin', (req, res) => {
-  return res.json(req.user);
+  res.json(req.user);
 });
 
 module.exports = router;
