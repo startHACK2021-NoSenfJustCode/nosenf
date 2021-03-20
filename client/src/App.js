@@ -1,7 +1,7 @@
 import './styles/App.scss';
 
 import React, { Component } from 'react'
-import { Route , Switch , Redirect, BrowserRouter , Link } from "react-router-dom"
+import { Route, Switch, Redirect, BrowserRouter, Link } from "react-router-dom"
 
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
@@ -36,54 +36,52 @@ class App extends React.Component {
 
   render() {
     return (
-        // <div className="container"> 
-        <div>
+      <div>
+        <Header />
 
-          <Header />
-            <figure className="fluidratio"></figure>
-            <Router>
+        <figure className="fluidratio"></figure>
+        <Router>
+          <div className="container-fluid">
+            <Switch>
 
-              <Switch>
+              <Route exact path="/">
+                <Dashboard />
+              </Route>
 
-                <Route exact path="/">
-                  <Dashboard />
-                </Route>
+              <Route exact path="/map">
+                <Map />
+              </Route>
 
-                <Route exact path="/map">
-                  <Map />
-                </Route>
+              <Route exact path="/heart">
+                <Heart />
+              </Route>
 
-                <Route exact path="/heart">
-                  <Heart />
-                </Route>
+              <Route exact path="/plus">
+                <Plus />
+              </Route>
 
-                <Route exact path="/plus">
-                  <Plus />
-                </Route>
-
-                <Route exact path="/user"
-                  component = { Userprofile }/>
+              <Route exact path="/user"
+                component={Userprofile} />
 
 
-              </Switch>
-              
-              
-              <Route
-                exact
-                path='/signup'
-                render={props => <Signup setUser={this.setUser} {...props} />}
-              />
+            </Switch>
 
-              <Route exact path = "/login" 
-                render= { props => 
-                <Login setUser={this.setUser} {...props}/>}
-              />
 
-              <Footer />
+            <Route
+              exact
+              path='/signup'
+              render={props => <Signup setUser={this.setUser} {...props} />}
+            />
 
-            </Router>
+            <Route exact path="/login"
+              render={props =>
+                <Login setUser={this.setUser} {...props} />}
+            />
+          </div>
+          <Footer />
+        </Router>
 
-        </div>        
+      </div>
     );
   }
 }

@@ -1,6 +1,6 @@
 .Footer {
   /* border: 2px red solid; */
-  position: fixed;
+  position: absolute;
   display: table;
   width: 100vw;
   height:100px;
