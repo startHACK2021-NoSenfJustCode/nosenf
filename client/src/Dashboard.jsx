@@ -1,3 +1,4 @@
+
 function Dashboard() {
     return (
         <div>
@@ -7,6 +8,7 @@ function Dashboard() {
                     <div className="button">Button</div>
                 </div>
             </div>
+
         </div>
 
     )

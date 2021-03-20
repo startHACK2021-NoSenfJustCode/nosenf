@@ -1,12 +1,13 @@
 .Footer {
+  /* border: 2px red solid; */
   position: fixed;
   display: table;
-  width: 100%;
+  width: 100vw;
   height:75px;
   padding-left: 0px;
   padding-bottom: 10px;
   padding-top: 10px;
-  margin: 0 0 0 0px;
+  margin: 0px;
   table-layout: fixed; /* For cells of equal size */
   background-color: White;
   bottom: 0;
