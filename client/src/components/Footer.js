@@ -19,7 +19,6 @@ class Footer extends React.Component {
 
   render() {
     return (
-      
       <div>
         <ul className="Footer fixed-bottom" >
           <li onClick={this.handleNavClick.bind(this)}>
