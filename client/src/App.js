@@ -36,52 +36,50 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Header />
-
+      <div className="container" style={{ "margin-top":"15%"}}>
+        <Header/>
         <figure className="fluidratio"></figure>
         <Router>
-          <div className="container-fluid">
-            <Switch>
+          <Switch>
 
-              <Route exact path="/">
-                <Dashboard />
-              </Route>
+            <Route exact path="/">
+              <Dashboard />
+            </Route>
 
-              <Route exact path="/map">
-                <Map />
-              </Route>
+            <Route exact path="/map">
+              <Map />
+            </Route>
 
-              <Route exact path="/heart">
-                <Heart />
-              </Route>
+            <Route exact path="/heart">
+              <Heart />
+            </Route>
 
-              <Route exact path="/plus">
-                <Plus />
-              </Route>
+            <Route exact path="/plus">
+              <Plus />
+            </Route>
 
-              <Route exact path="/user"
-                component={Userprofile} />
-
-
-            </Switch>
+            <Route exact path="/user"
+              component={Userprofile} />
 
 
-            <Route
-              exact
-              path='/signup'
-              render={props => <Signup setUser={this.setUser} {...props} />}
-            />
+          </Switch>
 
-            <Route exact path="/login"
-              render={props =>
-                <Login setUser={this.setUser} {...props} />}
-            />
-          </div>
+
+          <Route
+            exact
+            path='/signup'
+            render={props => <Signup setUser={this.setUser} {...props} />}
+          />
+
+          <Route exact path="/login"
+            render={props =>
+              <Login setUser={this.setUser} {...props} />}
+          />
+
           <Footer />
         </Router>
 
-      </div>
+      </div >
     );
   }
 }
