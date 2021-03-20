@@ -1,8 +1,14 @@
 function Dashboard() {
     return (
         <div>
-            <h2>Dashboard</h2>
+            <div className="card">
+                <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
         </div>
+
     )
 }
 

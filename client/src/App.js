@@ -11,9 +11,9 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="container">
+    <div>
     <Header />
-      <figure className="fluidratio"></figure>
+      <figure class="fluidratio"></figure>
       <Router>
         <Switch>
           <Route exact path="/">
@@ -38,5 +38,7 @@ function App() {
     </div >
   )
 }
+
+
 
 export default App;
