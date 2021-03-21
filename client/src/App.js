@@ -12,7 +12,7 @@ import Plus from './components/Plus.jsx'
 
 
 import Signup from './components/auth/Signup';
-import Navbar from './components/navbar/Navbar';
+// import Navbar from './components/navbar/Navbar';
 import Login from './components/auth/Login';
 import Userprofile from './components/user/Userprofile';
 // import User from './User.jsx'
@@ -20,12 +20,14 @@ import Userprofile from './components/user/Userprofile';
 // import { Router } from 'express';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import './styles/button.css';
 
 
 class App extends React.Component {
 
   state = {
-    user: this.props.user
+    user: this.props.user,
+    pathname: window.location.pathname
   }
 
   setUser = user => {
@@ -34,10 +36,16 @@ class App extends React.Component {
     })
   }
 
+  updatePathname() {
+    this.setState({ pathname: window.location.pathname })
+  }
+
   render() {
+    const { pathname } = this.state
     return (
-      <div className="container" style={{ "marginTop":"100px"}}>
-        <Header/>
+      < div className="container" style={{ "marginTop": "100px" }}  onClick={this.updatePathname.bind(this)}>
+
+        <Header />
         <figure className="fluidratio"></figure>
         <Router>
           <Switch>
@@ -61,6 +69,11 @@ class App extends React.Component {
             <Route exact path="/user"
               component={Userprofile} />
 
+                <Route exact path="/plus"
+                  render={(props) => 
+                  <Plus setUser={this.setUser} {...props}/>}>
+                  {/* <Plus /> */}
+                </Route>
 
           </Switch>
 
@@ -76,10 +89,10 @@ class App extends React.Component {
               <Login setUser={this.setUser} {...props} />}
           />
 
-          <Footer />
+          <Footer pathname={pathname} />
         </Router>
 
-      </div >
+      </div>
     );
   }
 }

@@ -15,7 +15,7 @@ export default class Userprofile extends Component {
                         <div className="userBox Small">
                             <h1>Voting Hero</h1>
                             <img
-                                src="../../Images/UnionmedalIcon.png"
+                                src="../../images/UnionmedalIcon.png"
                                 alt="medal icon"
                             />
                             <p className="userButton button">
@@ -25,7 +25,7 @@ export default class Userprofile extends Component {
                         <div className="userBox Small">
                             <h1>7 Friends</h1>
                             <img
-                                src="../../Images/UnionfriendsIcon.png"
+                                src="../../images/UnionfriendsIcon.png"
                                 alt="friends icon"
                             />
                             <p className="userButton button redGradientButton">
@@ -35,7 +35,7 @@ export default class Userprofile extends Component {
                         <div className="userBox Small">
                             <h1>Fundings</h1>
                             <img
-                                src="../../Images/UnionawardsIcon.png"
+                                src="../../images/UnionawardsIcon.png"
                                 alt="awards icon"
                             />
                             <p className="userButton button">
@@ -45,7 +45,7 @@ export default class Userprofile extends Component {
                         <div className="userBox Small">
                             <h1>Settings</h1>
                             <img
-                                src="../../Images/settings-iconsettingsIcon.png"
+                                src="../../images/settings-iconsettingsIcon.png"
                                 alt="settings icon"
                             />
                             <p className="userButton button redGradientButton">
@@ -62,6 +62,7 @@ export default class Userprofile extends Component {
                         />
                     </div>
                 </div>
+
             </div>
         )
     }
