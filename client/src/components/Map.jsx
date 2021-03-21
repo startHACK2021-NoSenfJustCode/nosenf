@@ -8,14 +8,14 @@ const t3 = "The Kindergarten needs a new roof, the playground is not safe anymor
 
 
 const checkValue = (value) => {
-        if (value <= 200) {
-            return(t1)
-        } else if (value <= 400) {
-            return(t2)
-        } else {
-            return(t3)
-        }
+    if (value <= 200) {
+        return (t1)
+    } else if (value <= 400) {
+        return (t2)
+    } else {
+        return (t3)
     }
+}
 
 class Map extends React.Component {
     constructor(...args) {
@@ -51,8 +51,6 @@ class Map extends React.Component {
                             </div>
                         </div>
                         <div className="Hcard" id="CardBottom">
-                            {/*<input type="range" min="1" step="1" max="100" className="slider" onChange={handleSliderChange()} />
-                        <div className="row">*/}
                             <input
                                 id="typeinp"
                                 type="range"
@@ -61,6 +59,19 @@ class Map extends React.Component {
                                 onChange={this.handleChange}
                                 step="1"
                                 className="slider" />
+
+                            <div className="row">
+                                <div className="col-sm-4">
+                                    1.5 Million
+                                </div>
+                                <div className="col-sm-4">
+                                    2 Million
+                                    </div>
+                                <div className="col-sm-4">
+                                    2.5 Million
+                                    </div>
+
+                            </div>
                             <span className="userButton button redGradientButton" >Save</span>
                         </div>
                     </div>
