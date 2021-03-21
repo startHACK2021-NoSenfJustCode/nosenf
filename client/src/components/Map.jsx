@@ -1,7 +1,21 @@
+import MapA from "../images/svgs/Map.svg"
 function Map() {
     return (
         <div>
-            <h2>Map</h2>
+            <div className="row mb-5">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10 text-center">
+                    <div className="card Hcard" style={{backgroundImage: `url(${MapA})`}}>
+                        <div className="card-body">
+                            <div className="row">
+                            </div>
+                            <span className="Hbutton btn">SHOW ME MORE</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-sm-1"></div>
+            </div>
+
         </div>
     );
 }
