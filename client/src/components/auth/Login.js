@@ -55,7 +55,7 @@ export default class Login extends Component {
   render (){
 
     return (
-      <div className="centerAuth">
+      <div className="centerAuth container-fluid">
         <div className="loginLogo">
           <img
           src="../../Images/LightStGallenLogo.png"
@@ -143,7 +143,7 @@ export default class Login extends Component {
             </div>
 
 
-            <div className="signupLoginSwitch">
+            <div className="col signupLoginSwitch" style={{paddingBottom:"100px", paddingTop:"100px"}}>
               Need to create an account?  <Link to = "/signup">Sign up</Link>
             </div>            
         

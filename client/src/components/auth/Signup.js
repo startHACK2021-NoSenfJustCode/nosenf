@@ -49,7 +49,7 @@ export default class Signup extends Component {
     console.log(this.props)
 
     return (
-      <div className="centerAuth">
+      <div className="centerAuth container-fluid">
 
         <Container>
           <div className="boxOn">
