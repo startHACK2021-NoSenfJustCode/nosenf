@@ -21,11 +21,11 @@ import Userprofile from './components/user/Userprofile';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
-
 class App extends React.Component {
 
   state = {
-    user: this.props.user
+    user: this.props.user,
+    pathname: '/'
   }
 
   setUser = user => {
@@ -34,11 +34,16 @@ class App extends React.Component {
     })
   }
 
-  render() {
+  updatePathname() {
+    this.setState({ pathname: window.location.pathname })
+  }
 
+  render() {
+    const { pathname } = this.state
     return (
-      <div className="container" style={{ "margin-top":"100px"}}>
-        <Header/>
+      < div className="container" style={{ "marginTop": "100px" }}  onClick={this.updatePathname.bind(this)}>
+
+        <Header />
         <figure className="fluidratio"></figure>
         <Router>
           <Switch>
@@ -82,7 +87,7 @@ class App extends React.Component {
               <Login setUser={this.setUser} {...props} />}
           />
 
-          <Footer />
+          <Footer pathname={pathname} />
         </Router>
 
       </div>
