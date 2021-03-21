@@ -23,7 +23,6 @@ function Dashboard() {
                                 <img className="img-fluid" src={Graph} alt="graph"></img>
                             </div>
                         </div>
-                        <Link className="userButton button redGradientButton mt-3 mb-3" to='/map' >SHOW ME MORE</Link>
                     </div>
                 </div>
                 <div className="col-sm-1"></div>
@@ -52,7 +51,7 @@ function Dashboard() {
                                 <img src={MapLike} alt="place" />
                             </div>
                         </div>
-                        <Link className="userButton button redGradientButton mt-3 mb-3" to='/heart' >SET THE BUDGET</Link>
+                        <Link className="userButton button redGradientButton mt-3 mb-3" to='/map' >SET THE BUDGET</Link>
                     </div>
                 </div>
                 <div className="col-sm-1"></div>
