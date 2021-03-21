@@ -1,4 +1,9 @@
 import PlaceIcon from "../images/PlaceIcon.png"
+import '../styles/slider.css';
+
+//function handleSliderChange(){
+//    console.log()
+//}
 
 function Map() {
     return (
@@ -20,19 +25,18 @@ function Map() {
                         </div>
                     </div>
                     <div className="Hcard" id="CardBottom">
-
+                        <div className="slidecontainer">
+                            <input type="range" min="1" max="100" className="slider" /> {//onInput={handleSliderChange()} />
+                            }
+                        </div>)
                         <div className="row">
                             <span className="userButton button redGradientButton" >Save</span>
                         </div>
                     </div>
                 </div>
-                <div className="row bg-white">
-                    <div className="col" width="300px">
-
-                    </div>
-                </div>
             </div>
             <div className="col-sm-1"></div>
+
         </div>
 
 
