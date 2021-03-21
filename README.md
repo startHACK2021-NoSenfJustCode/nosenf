@@ -1,3 +1,5 @@
+<img src="./screendesign.png"/>
+
 To start the dev server
 - nodemon run
 
