@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 import HomeIcon from '../images/footer/HomeIcon.png';
 import MapIcon from '../images/footer/MapIcon.png';
 import HeartIcon from '../images/footer/HeartIcon.png';
@@ -11,50 +12,50 @@ import WhiteHeartIcon from '../images/footer/WhiteHeartIcon.png';
 import PlusIcon from '../images/footer/PlusIcon.png';
 import '../styles/Footer.css';
 
-class Footer extends React.Component {
 
-  handleNavClick() {
-    this.forceUpdate();
-  }
 
-  render() {
-    return (
-      <div>
-        <ul className="Footer fixed-bottom" >
-          <li onClick={this.handleNavClick.bind(this)}>
-            <NavLink className='Link' activeClassName='active' exact to='/' >
-              <img src={window.location.pathname === "/" ? WhiteHomeIcon : HomeIcon} alt="Home" />
-            </NavLink>
-          </li>
-
-          <li onClick={this.handleNavClick.bind(this)} >
-            <NavLink className='Link' activeClassName='active' exact to='/map'>
-            <img src={window.location.pathname === "/map" ? WhiteMapIcon : MapIcon} alt="Map" />
-            </NavLink>
-          </li>
-
-          <li onClick={this.handleNavClick.bind(this)} >
-            <NavLink className='Link' activeClassName='active' exact to='/plus'>
-            <img src={window.location.pathname === "/plus" ? PlusIcon : PlusIcon} alt="Plus" />
+function Footer({pathname}) {
+  return (
+    <div>
+      <ul className="Footer fixed-bottom" >
+        <li >
+          <NavLink className='Link' activeClassName='active' exact to='/' >
+            <img src={pathname === "/" ? WhiteHomeIcon : HomeIcon} alt="Home" />
           </NavLink>
-          </li>
+        </li>
 
-          <li onClick={this.handleNavClick.bind(this)} >
-            <NavLink className='Link' activeClassName='active' exact to='/heart'>
-            <img src={window.location.pathname === "/heart" ? WhiteHeartIcon : HeartIcon} alt="Heart" />
-            </NavLink>
-          </li>
+        <li >
+          <NavLink className='Link' activeClassName='active' exact to='/map'>
+            <img src={pathname === "/map" ? WhiteMapIcon : MapIcon} alt="Map" />
+          </NavLink>
+        </li>
 
-          <li onClick={this.handleNavClick.bind(this)} >
-            <NavLink className='Link' activeClassName='active' exact to='/user'>
-            <img src={window.location.pathname === "/user" ? WhiteUserIcon : UserIcon} alt="User" />
-            </NavLink>
-          </li>
-        </ul>
-        
-      </div>
-    )
-  }
+        <li>
+          <NavLink className='Link' activeClassName='active' exact to='/plus'>
+            <img src={pathname === "/plus" ? PlusIcon : PlusIcon} alt="Plus" />
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink className='Link' activeClassName='active' exact to='/heart'>
+            <img src={pathname === "/heart" ? WhiteHeartIcon : HeartIcon} alt="Heart" />
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink className='Link' activeClassName='active' exact to='/user'>
+            <img src={pathname === "/user" ? WhiteUserIcon : UserIcon} alt="User" />
+          </NavLink>
+        </li>
+      </ul>
+
+    </div>
+  )
 }
+
+Footer.propTypes = {
+  pathname: PropTypes.string.isRequired
+};
+
 
 export default Footer;
