@@ -126,7 +126,10 @@ export default class Plus extends Component {
 
                         <div className="formImage">
                             <Form.Group >
-                                <Form.Label hmtlFor="image" >Upload an image
+                                <Form.Label hmtlFor="image" >
+                                  <div className="row">
+                                  Upload an image
+                                    </div>
                                   <img
                                     src='../../Images/Cameracamera.png'
                                     alt='camera icon'
