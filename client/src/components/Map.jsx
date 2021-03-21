@@ -1,11 +1,10 @@
-import MapA from "../images/svgs/Map.svg"
 function Map() {
     return (
         <div>
             <div className="row mb-5">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 text-center">
-                    <div className="card Hcard" style={{backgroundImage: `url(${MapA})`}}>
+                    <div className="card Hcard SvgMap">
                         <div className="card-body">
                             <div className="row">
                             </div>

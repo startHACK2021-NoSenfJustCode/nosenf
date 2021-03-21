@@ -1,17 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Map from "../images/svgs/Map.svg";
 import MapCost from "../images/svgs/MapCost.svg";
 import MapCalendar from "../images/svgs/MapCalendar.svg";
 import MapLike from "../images/svgs/MapLike.svg";
 import Graph from "../images/svgs/RGraph.svg";
 import PlaceIcon from "../images/PlaceIcon.png"
-import Footer from './Footer';
 
 function Dashboard() {
-
-    function onLinkClick() {
-    }
     return (
         <div>
             <div className="row mb-5">
@@ -37,7 +32,7 @@ function Dashboard() {
             <div className="row">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 text-center">
-                    <div onClick={onLinkClick} className="card Hcard SvgCard container-fluid" style={{ backgroundImage: `url(${Map})` }} >
+                    <div className="card Hcard SvgMap container-fluid" >
                         <div className="card-title mt-2 mb-5">
                             <h3>
                                 Kindergarten Rotmonten

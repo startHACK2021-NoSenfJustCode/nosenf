@@ -78,7 +78,7 @@
 }
 
 .backgroundMapImage {
-    background-image: url("../../images/MapButton.png");
+    background-image: url("../../images/svgs/Map.svg");
     background-size: 75vw;
     background-position: top;
     background-repeat: no-repeat;
