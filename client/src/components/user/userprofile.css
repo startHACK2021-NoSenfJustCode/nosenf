@@ -4,6 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .userDetailsContainer {
@@ -13,6 +14,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    /* align-items: center; */
+    text-align: center;
 }
 
 .userBox {
@@ -25,7 +29,7 @@
     justify-content: space-around;
     align-items: center;
 
-    background: rgba(60, 68, 77, 0.8);
+    background: rgba(60, 68, 77, 0.90);
     box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     color:white;
@@ -50,14 +54,13 @@
     width: 84%
 }
 
+.LargeSquare {
+    height: 50vh;
+}
+
 .userBox >h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    /* width: 40vw; */
-    /* padding: 3%; */
 }
 
 .userBox.Small >h1 {
@@ -68,12 +71,108 @@
     width:84vw;
 }
 
-.userBox >p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    /* font-size: 24px; */
+.userBox > p {
     line-height: 28px;
     width: 30vw;
     padding: 5%;
+}
+
+.backgroundMapImage {
+    background-image: url("../../images/MapButton.png");
+    background-size: 75vw;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    background-color: linear-gradient(180deg, rgba(60, 68, 77, 0) 0%, #3C444D 100%);
+    border-radius: 6px;
+}
+
+.userBox.Wide.Heart >img {
+    width: 60px;
+    /* width: auth; */
+    height: auto;
+    padding: 5% 0%;
+}
+
+.progressBar {
+    /* background-color: #8C0303!important; */
+    /* color: #8C0303!important; */
+    width: 60vw;
+}
+
+.progress-bar {
+    background-color: #8C0303!important;
+    height: 7px;
+}
+
+.Heart >h1 {
+    margin: 5vh 10vw 1vh;;
+    padding: 0 25%;
+}
+.Heart >p {
+    font-size: 16px;
+    width: 100vw;
+    text-align: left;
+    margin: 0 0 0 35vw;
+    line-height: 5px;
+}
+
+.leftAlign {
+    font-size:13px;
+    width: 100vw;
+    text-align: left;
+    margin: 0 40vw 0 80vw;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.leftAlign > img {
+    height:1.75vh;
+    filter: invert(100%) sepia(79%) saturate(2%) hue-rotate(96deg) brightness(106%) contrast(101%);
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.tabs {
+    padding-top: 30px;
+    width: 65vw;
+    padding-bottom: 300px;
+    /* text-align: left;
+    margin: 0 5vh 0 0; */
+    /* background-color:white; */
+    border-radius: 10px 10px 0px 0px;
+}
+
+.nav-link {  
+    font-size:10px;
+    padding: 3px!important;
+    margin: 0 1px;
+   
+}
+
+
+.tabText {
+    font-size: 16px;
+}
+
+.dateBoxContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dateBox {
+    display: flex;
+    /* width: 65vw; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    margin: 10px 10px;
+    font-size:12px;
+}
+
+.nav-tabs>a {
+    color:white;
+    text-decoration: none!important;
 }

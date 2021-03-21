@@ -12,7 +12,7 @@ import Plus from './components/Plus.jsx'
 
 
 import Signup from './components/auth/Signup';
-import Navbar from './components/navbar/Navbar';
+// import Navbar from './components/navbar/Navbar';
 import Login from './components/auth/Login';
 import Userprofile from './components/user/Userprofile';
 // import User from './User.jsx'
@@ -67,6 +67,11 @@ class App extends React.Component {
             <Route exact path="/user"
               component={Userprofile} />
 
+                <Route exact path="/plus"
+                  render={(props) => 
+                  <Plus setUser={this.setUser} {...props}/>}>
+                  {/* <Plus /> */}
+                </Route>
 
           </Switch>
 
@@ -85,7 +90,7 @@ class App extends React.Component {
           <Footer pathname={pathname} />
         </Router>
 
-      </div >
+      </div>
     );
   }
 }
