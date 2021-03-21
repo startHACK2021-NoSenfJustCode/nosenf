@@ -15,7 +15,7 @@ export default class Userprofile extends Component {
                         <div className="userBox Small">
                             <h1>Voting Hero</h1>
                             <img
-                                src="../../images/UnionmedalIcon.png"
+                                src="../../Images/UnionmedalIcon.png"
                                 alt="medal icon"
                             />
                             <p className="userButton button">
@@ -25,7 +25,7 @@ export default class Userprofile extends Component {
                         <div className="userBox Small">
                             <h1>7 Friends</h1>
                             <img
-                                src="../../images/UnionfriendsIcon.png"
+                                src="../../Images/UnionfriendsIcon.png"
                                 alt="friends icon"
                             />
                             <p className="userButton button redGradientButton">
@@ -35,7 +35,7 @@ export default class Userprofile extends Component {
                         <div className="userBox Small">
                             <h1>Fundings</h1>
                             <img
-                                src="../../images/UnionawardsIcon.png"
+                                src="../../Images/UnionawardsIcon.png"
                                 alt="awards icon"
                             />
                             <p className="userButton button">
@@ -45,7 +45,7 @@ export default class Userprofile extends Component {
                         <div className="userBox Small">
                             <h1>Settings</h1>
                             <img
-                                src="../../images/settings-iconsettingsIcon.png"
+                                src="../../Images/settings-iconsettingsIcon.png"
                                 alt="settings icon"
                             />
                             <p className="userButton button redGradientButton">
