@@ -1,10 +1,6 @@
-.slidecontainer {
-    width: 100%;
-  }
-  
   .slider {
     -webkit-appearance: none;
-    width: 90%;
+    width: 70%;
     height: 5px;
     border-radius: 5px;
     background: #d3d3d3;
