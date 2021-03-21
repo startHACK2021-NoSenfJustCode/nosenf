@@ -111,7 +111,7 @@ export default class Signup extends Component {
               </Button>
             
             </Form>
-              <div className="signupLoginSwitch">
+              <div className="col signupLoginSwitch" style={{paddingBottom:"100px", paddingTop:"100px"}}>
                 Already have an account <Link to = "/login">Login </Link>
               </div>
           </div>
