@@ -19,7 +19,6 @@ function Heart() {
 
     return (
         <div>
-            {/* <h2>Heart</h2> */}
             <div className="userAllContainer">
         
                 <div className="userBox Wide Heart backgroundMapImage">
@@ -28,7 +27,7 @@ function Heart() {
                         src='../../Images/placelocationPin.png'
                         alt='pin icon'
                     />
-                    <p classname="leftAlign">{barMin} of {barMax} funded</p>
+                    <p className="leftAlign">{barMin} of {barMax} funded</p>
                     <div className="progressBar progress-bar">
                         
                         <ProgressBar  

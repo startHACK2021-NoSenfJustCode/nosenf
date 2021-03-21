@@ -130,7 +130,7 @@ export default class Plus extends Component {
                                   <img
                                     src='../../Images/Cameracamera.png'
                                     alt='camera icon'
-                                    classname="formImage"
+                                    className="formImage"
                                   />
                                 </Form.Label>
                             </Form.Group> 
